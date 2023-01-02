@@ -30,6 +30,7 @@ section .courses div h1 {
 }
 section .courses ul li{
  list-style-type: circle;
+ color: #fff;
 }
 section .courses ul li a{
  text-decoration: none;
