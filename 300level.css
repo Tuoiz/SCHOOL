@@ -1,0 +1,94 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  background: black;
+  line-height: 1.6;
+  /* background: linear-gradient(#202142, #ff6a95); */
+}
+section{
+  padding: 10px;
+}
+.head ul li a{
+  text-decoration: none;
+  color: #000;
+}
+.head ul li{
+  list-style-type: none;
+}
+section .courses{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 40vh 40vh 40vh;
+  grid-gap: 15px;
+  justify-items: center;
+}
+section .courses div h1 a{
+  text-decoration: none;
+}
+section .courses div h1 {
+  text-align: center;
+}
+section .courses ul li{
+ list-style-type: circle;
+}
+section .courses ul li a{
+ text-decoration: none;
+}
+section .courses a{
+  color: #fff;
+}
+section .courses a:hover{
+  color: #ff6a95;
+}
+
+section .courses div{
+  border-radius: 10px;
+  /* box-shadow: 2,4,red; */
+}
+section .courses div{
+  background: #202142;
+  width: 100%;
+}
+section .home a{
+  background: #202142;
+  padding: 4px;
+  border: 2px solid white;
+  border-radius: 4px;
+  opacity: 0.8;
+  text-decoration: none;
+  color: #ff6a95;
+  transition: all ease-in-out 0.5s;
+}
+section .home {
+  padding-bottom: 3px;
+  color: #ff6a95;
+  
+}
+section .home a:hover{
+  border: 2px solid black;
+  color: #fff;
+}
+section div .yslide{
+  overflow: hidden;
+  overflow-y: scroll;
+}
+section div .yslide::-webkit-scrollbar{
+  width: 10px;
+  height: 100%;
+}
+section div .yslide::-webkit-scrollbar-thumb{
+  background: #ff6a95;
+  height: 20%;
+  border-radius: 4px;
+}
+section div .yslide::-webkit-scrollbar-track{
+  background: white;
+  border-radius: 4px;
+  
+}
+@media screen and (max-width:501px) {
+  section .courses{
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+  }
+}

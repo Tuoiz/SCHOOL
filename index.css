@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  /* background-image: url('background.jpg'); */
+  background: #202142;
+  line-height: 1.6;
+  transition: all ease-in-out 3s ;
+}
+  
+
+.small .menu .slider li a{
+  text-decoration: none;
+  color: #ff6a95;
+  transition: all ease-in-out 0.5s;
+}
+.small .menu .slider li{
+  list-style-type: none;
+}
+
+.small .hamburger{
+  display: none;    
+}
+
+.small .hamburger span{
+  width: 25px;
+  height: 4px;
+  margin: 1.5px;
+  background:#fff;
+  border-radius: 2px;
+}
+
+  .small{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .small .menu {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 200px;
+  height: 100vh;
+  background:black;
+  transition: all ease-in-out .3s;
+}
+.small .menu .slider{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.small .menu ul{
+  padding-top: 20px;
+  margin-top: 50px;
+  margin-left: 30px;
+} 
+.small .menu .slider li {
+  padding: 2px;
+  
+}
+.small .hamburger{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  padding-left: 40px;
+  margin-top: 20px;
+  z-index: 20;
+}
+.small .hamburger:hover{
+  cursor: pointer;
+}
+  .small .menu .slider li a:hover{
+    color:#fff;
+    transition: all ease-in-out 0.5s;
+  }
+  
+  #close.is-active .bar:nth-child(2){
+    opacity: 0;
+  }
+  #close.is-active .bar:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+    background: #fff;
+  }
+  #close.is-active .bar:nth-child(3){
+    transform: translateY(-4px) rotate(-45deg);
+    background: #fff;
+  }
+  .greet{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30vh;
+    align-items: center;
+    justify-content: center;
+    padding-left:2px;
+    padding-right:2px;
+  }
+  .greet h1,h2{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
